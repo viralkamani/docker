@@ -38,6 +38,18 @@ The **Docker-wordpress** Project is a project for where we are using ubuntu as b
 
 ---
 
+## Project 3: Nginx-with-ssl-Direct
+
+## Description of Files
+
+### Nginx-with-ssl-Direct/Dockerfile
+- In this project we are making a docker file form the nginx's prebuild image. where we have to allow ssl to our domain.with several more configuration. 
+
+### Nginx-with-ssl-Direct/nginx.conf
+- This file contains the basic configuration (virtual host) details which will be copy into the site-awailable/enable directory.
+
+---
+
 ### How to Use
 
 1. Navigate to https://github.com/VDKamani/docker 
