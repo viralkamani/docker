@@ -10,20 +10,20 @@ The **Docker-wordpress** Project is a project for where we are using ubuntu as b
 
 ## Description of Files
 
-# Docker-wordpress/docker-compose.yml
+### Docker-wordpress/docker-compose.yml
 - Defines the services for the WordPress and MySQL containers.
 - Configures the network and links the containers together.
 - Mounts volumes to persist data between container restarts.
 
-# Docker-wordpress/entrypoint.sh
+### Docker-wordpress/entrypoint.sh
 - A custom script that runs at the start of the WordPress container, handling any necessary setup or configuration before launching the WordPress site.
 
-# Docker-wordpress/wp/Dockerfile
+### Docker-wordpress/wp/Dockerfile
 - Dockerfile to build the custom WordPress container.
 - Installs Apache, PHP, and the required PHP extensions.
 - Downloads and sets up WordPress inside the container.
 
-# Docker-wordpress/mysql/Dockerfile
+### Docker-wordpress/mysql/Dockerfile
 - Dockerfile to build the custom MySQL container.
 - Installs MySQL and configures it for use with WordPress.
 
@@ -33,7 +33,7 @@ The **Docker-wordpress** Project is a project for where we are using ubuntu as b
 
 ## Description of Files
 
-# Docker-Wordpress-Direct/docker-compose.yml 
+### Docker-Wordpress-Direct/docker-compose.yml 
 - This time we will be directly using the prebuild Wordpress and SQl file. this file contains the configration for the same. 
 
 ---
