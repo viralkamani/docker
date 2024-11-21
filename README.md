@@ -50,6 +50,28 @@ The **Docker-wordpress** Project is a project for where we are using ubuntu as b
 
 ---
 
+## Project 4: Docker-wordpress-project-deployment 
+
+## Description of Files:
+
+### Docker-wordpress-project-deployment/Docker/docker-compose.yml
+-This is the project where we will be deploying existing fully funtional wordpress project.
+
+- This file contains the configuration to start both mysql and wordpress custom image developed by us and with all nessessory configuration as well as the network to run them on same network. Also necessory configuration of enviroment variable volume mounting.
+
+### Docker-wordpress-project-deployment/Docker/html/*
+- This is the directory where you will be adding your main wordpress project's code. 
+
+### Docker-wordpress-project-deployment/mysql/Dockerfile
+- This file contains basic configuration to build the custom mysql image.
+
+- Also we need add the sql dump file here same root as Dockerfile.
+
+### Docker-wordpress-project-deployment/wp/Dockerfile
+- This file contains the basic configuration to build the wordpress image with apache it self.
+
+---
+
 ### How to Use
 
 1. Navigate to https://github.com/VDKamani/docker 
