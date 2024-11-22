@@ -82,6 +82,11 @@ The **Docker-wordpress** Project is a project for where we are using ubuntu as b
 6. Run `docker-compose logs` to watch the logs.
 7. Run `docker ps` to watch running process.
 
+### How to install Docker: 
+- [Install Docker](https://docs.docker.com/engine/install/)
+
+### Collaboration: 
+- Some of the Project in this repositories are made by [Harshil Thummar](https://github.com/HarshilThummar) kindly go and checkout his profile for more such usefull projects and repos.
 
 ## Contribution
 
