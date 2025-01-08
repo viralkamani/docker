@@ -1,0 +1,23 @@
+# Stage 1: Build Angular App
+FROM node:16 AS frontend  
+WORKDIR /frontend  
+COPY frontend/package*.json ./  
+RUN npm install  
+COPY frontend/ .  
+RUN npm run build  
+
+# Stage 2: Build Node.js Backend
+FROM node:16 AS backend  
+WORKDIR /backend  
+COPY backend/package*.json ./  
+RUN npm install  
+COPY backend/ .  
+RUN npm run build  
+
+# Stage 3: Production
+FROM nginx:alpine  
+WORKDIR /usr/share/nginx/html  
+COPY --from=frontend /frontend/dist/ ./frontend  
+COPY --from=backend /backend/build ./backend  
+EXPOSE 80  
+CMD ["nginx", "-g", "daemon off;"]
